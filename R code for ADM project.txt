@@ -1,0 +1,89 @@
+# Package Installation
+install.packages('recommenderlab')
+library(recommenderlab)
+
+# Data Loading
+data("MovieLense")
+print(MovieLense)
+
+# Output distribution of the Movie ratings
+print(table(as.vector(as(MovieLense,'matrix'))))
+
+# Check the average of each åmovie rating & each user rating
+summary(colCounts(MovieLense)) # Each user rates 59.73 movies (average)
+summary(rowCounts(MovieLense)) # Each film has got ratings from 105.4 different users (Avg)
+
+# Lets see rating about the particular movie
+avg_ratings <- colMeans(MovieLense)
+avg_ratings[50] #Stat wars rating 4.35
+colCounts(MovieLense[,50]) # 583 users have rated Starwars
+
+# Find the that is most similar to star wars
+similar_movies<- recommenderlab::similarity(MovieLense[,50],
+                                            MovieLense[,-50],
+                                            method = "cosine",
+                                            which = "items")
+
+colnames(similar_movies)[which(similar_movies > 0.99)]
+
+############################### SVD #################################################
+# Filter data where users and movies with minimum number of available ratings
+filter_data <- MovieLense[rowCounts(MovieLense) > 10,
+                          colCounts(MovieLense)> 50]
+
+# Data Normalize
+Data_Norm <- recommenderlab::normalize(filter_data)
+Data <- as(Data_Norm,"matrix")
+Data[is.na(Data)] <- 0
+
+# SVD calculation
+install.packages("irlba")
+library(irlba)
+
+SVD <- irlba::irlba(Data,nv = 50, nu = 50)
+
+# The following explore the metrics behind SVD
+print(attributes(SVD))
+print(dim(Data))
+print(dim(SVD$u))
+print(dim(SVD$v))
+
+# 
+movie <- 45
+print(paste("movie:",
+            colnames(Data)[movie]))
+
+ans <- as.factor(as.numeric(
+                 Data[,movie]!=0))
+
+SVD <- irlba(Data[,-movie],nu = 50 , nv = 50)
+
+rotation <- data.frame(movie = colnames(Data[,-movie]),SVD$v)
+
+# Model Building
+library(randomForest)
+train <- sample(1:nrow(rotation),500)
+
+user <- as.data.frame(SVD$u[train,])
+target <- as.data.frame(SVD$u[-train,])
+model <- randomForest::randomForest(ans[train] ~.,
+                                    data= user,
+                                    importance = T)
+
+response <- predict(model,target,
+                    ntree = model$ntree)
+
+library(caret)
+
+confusionMatrix(table(ans[-train],response))
+varImpPlot(model,n.var = 10)
+
+a <- as.data.frame(rotation[order(rotation[,2]),1:2])
+View(a) # Negative values are strongly associated with the movie
+# Star wars , God fathers and Raiders of the Lost Ark (1981)
+# will be seen by the same people who watch pulp fiction
+
+# Lets find it
+similarity(filter_data[,45],filter_data[,145],
+           method = 'cosine',
+           which = 'items')
