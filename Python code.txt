@@ -1,0 +1,15 @@
+import requests
+data_url= “urlofthedataset”
+MyFile = "CrimeDataset.csv"
+
+kaggle_info = {'UserName': "XXXXX ", 
+'Password': "YYYYYY"}
+
+req = requests.get(data_url)
+req = requests.post(req.url, data = kaggle_info, prefetch = False)
+
+file = open(MyFile, 'w')
+for chunk in req.iter_content(chunk_size = 512 * 1024):
+    if chunk:
+        file.write(chunk)
+file.close()

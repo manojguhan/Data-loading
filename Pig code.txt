@@ -1,0 +1,45 @@
+############################################################################################
+regionGroup = GROUP crime_data_load1 BY category;
+
+caseRegistered = FOREACH regionGroup GENERATE county, COUNT(index_total) as caseRegistered;
+
+query03 = caseRegistered;
+
+DUMP query03;
+--Comment below line when running initially
+RMF hdfs://localhost:54310/home/hduser/Downloads/PDA_PIG1/;
+STORE query03 INTO 'hdfs://localhost:54310/home/hduser/Downloads/PDA_PIG1/' USING PigStorage(',') ;
+
+STORE query03 INTO '/home/hduser/Downloads/PDA_PIG1/query03.txt' using PigStorage(';');
+
+
+regionGroup = GROUP crime_data_load1 BY region;
+
+caseRegistered = FOREACH regionGroup GENERATE county, COUNT(index_total) as caseRegistered;
+
+query04 = caseRegistered;
+
+DUMP query04;
+--Comment below line when running initially
+RMF hdfs://localhost:54310/home/hduser/Downloads/PDA_PIG1/;
+
+STORE query04 INTO 'hdfs://localhost:54310/home/hduser/Downloads/PDA_PIG1/' USING PigStorage(',') ;
+
+STORE query04 INTO '/home/hduser/Downloads/PDA_PIG1/query04.txt' using PigStorage(';');
+
+
+
+regionGroup = GROUP crime_data_load1 BY agency;
+
+caseRegistered = FOREACH regionGroup GENERATE county, COUNT(index_total) as caseRegistered;
+
+query04 = caseRegistered;
+
+DUMP query05;
+--Comment below line when running initially
+RMF hdfs://localhost:54310/home/hduser/Downloads/PDA_PIG1/;
+STORE query05 INTO 'hdfs://localhost:54310/home/hduser/Downloads/PDA_PIG1/' USING PigStorage(',') ;
+
+STORE query05 INTO '/home/hduser/Downloads/PDA_PIG1/query04.txt' using PigStorage(';');
+############################################################################################################
+

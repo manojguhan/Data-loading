@@ -1,0 +1,566 @@
+##########################################################################
+ 
+ for (j in 1:(nrow(Converted_Input_mat_df))) 
+  {
+    Year = (Converted_Input_mat_df[j,3])
+    Month  = (Converted_Input_mat_df[j,4])
+    TotalCrimes = (Converted_Input_mat_df[j,5])
+
+if (Year == 1990)
+        {  
+      Req_MonthValue = ReqMonthValue + Month
+      Req_TotalCrimes = Req_TotalCrimes + TotalCrimes
+      
+        }
+      }
+
+Average_crimes_perMonth_1990 = round( Req_TotalCrimes/Req_MonthValue )
+
+##########################################################################
+
+  for (j in 1:(nrow(Converted_Input_mat_df))) 
+  {
+    Year = (Converted_Input_mat_df[j,3])
+    Month  = (Converted_Input_mat_df[j,4])
+    TotalCrimes = (Converted_Input_mat_df[j,5])
+
+if (Year == 1991)
+        {  
+      Req_MonthValue = ReqMonthValue + Month
+      Req_TotalCrimes = Req_TotalCrimes + TotalCrimes
+      
+        }
+      }
+
+Average_crimes_perMonth_1991 = round( Req_TotalCrimes/Req_MonthValue )
+
+##############################################################################
+
+##########################################################################
+
+  for (j in 1:(nrow(Converted_Input_mat_df))) 
+  {
+    Year = (Converted_Input_mat_df[j,3])
+    Month  = (Converted_Input_mat_df[j,4])
+    TotalCrimes = (Converted_Input_mat_df[j,5])
+
+if (Year == 1992)
+        {  
+      Req_MonthValue = ReqMonthValue + Month
+      Req_TotalCrimes = Req_TotalCrimes + TotalCrimes
+      
+        }
+      }
+
+Average_crimes_perMonth_1992 = round( Req_TotalCrimes/Req_MonthValue )
+
+##############################################################################
+
+##########################################################################
+
+  for (j in 1:(nrow(Converted_Input_mat_df))) 
+  {
+    Year = (Converted_Input_mat_df[j,3])
+    Month  = (Converted_Input_mat_df[j,4])
+    TotalCrimes = (Converted_Input_mat_df[j,5])
+
+if (Year == 1993)
+        {  
+      Req_MonthValue = ReqMonthValue + Month
+      Req_TotalCrimes = Req_TotalCrimes + TotalCrimes
+      
+        }
+      }
+
+Average_crimes_perMonth_1993 = round( Req_TotalCrimes/Req_MonthValue )
+
+##############################################################################
+
+##########################################################################
+
+  for (j in 1:(nrow(Converted_Input_mat_df))) 
+  {
+    Year = (Converted_Input_mat_df[j,3])
+    Month  = (Converted_Input_mat_df[j,4])
+    TotalCrimes = (Converted_Input_mat_df[j,5])
+
+if (Year == 1994)
+        {  
+      Req_MonthValue = ReqMonthValue + Month
+      Req_TotalCrimes = Req_TotalCrimes + TotalCrimes
+      
+        }
+      }
+
+Average_crimes_perMonth_1994 = round( Req_TotalCrimes/Req_MonthValue )
+
+##############################################################################
+
+##########################################################################
+
+  for (j in 1:(nrow(Converted_Input_mat_df))) 
+  {
+    Year = (Converted_Input_mat_df[j,3])
+    Month  = (Converted_Input_mat_df[j,4])
+    TotalCrimes = (Converted_Input_mat_df[j,5])
+
+if (Year == 1995)
+        {  
+      Req_MonthValue = ReqMonthValue + Month
+      Req_TotalCrimes = Req_TotalCrimes + TotalCrimes
+      
+        }
+      }
+
+Average_crimes_perMonth_1995 = round( Req_TotalCrimes/Req_MonthValue )
+
+##############################################################################
+
+##########################################################################
+
+  for (j in 1:(nrow(Converted_Input_mat_df))) 
+  {
+    Year = (Converted_Input_mat_df[j,3])
+    Month  = (Converted_Input_mat_df[j,4])
+    TotalCrimes = (Converted_Input_mat_df[j,5])
+
+if (Year == 1996)
+        {  
+      Req_MonthValue = ReqMonthValue + Month
+      Req_TotalCrimes = Req_TotalCrimes + TotalCrimes
+      
+        }
+      }
+
+Average_crimes_perMonth_1996 = round( Req_TotalCrimes/Req_MonthValue )
+
+##############################################################################
+
+##########################################################################
+
+  for (j in 1:(nrow(Converted_Input_mat_df))) 
+  {
+    Year = (Converted_Input_mat_df[j,3])
+    Month  = (Converted_Input_mat_df[j,4])
+    TotalCrimes = (Converted_Input_mat_df[j,5])
+
+if (Year == 1997)
+        {  
+      Req_MonthValue = ReqMonthValue + Month
+      Req_TotalCrimes = Req_TotalCrimes + TotalCrimes
+      
+        }
+      }
+
+Average_crimes_perMonth_1997 = round( Req_TotalCrimes/Req_MonthValue )
+
+##############################################################################
+
+##########################################################################
+
+  for (j in 1:(nrow(Converted_Input_mat_df))) 
+  {
+    Year = (Converted_Input_mat_df[j,3])
+    Month  = (Converted_Input_mat_df[j,4])
+    TotalCrimes = (Converted_Input_mat_df[j,5])
+
+if (Year == 1998)
+        {  
+      Req_MonthValue = ReqMonthValue + Month
+      Req_TotalCrimes = Req_TotalCrimes + TotalCrimes
+      
+        }
+      }
+
+Average_crimes_perMonth_1998 = round( Req_TotalCrimes/Req_MonthValue )
+
+##############################################################################
+
+##########################################################################
+
+  for (j in 1:(nrow(Converted_Input_mat_df))) 
+  {
+    Year = (Converted_Input_mat_df[j,3])
+    Month  = (Converted_Input_mat_df[j,4])
+    TotalCrimes = (Converted_Input_mat_df[j,5])
+
+if (Year == 1999)
+        {  
+      Req_MonthValue = ReqMonthValue + Month
+      Req_TotalCrimes = Req_TotalCrimes + TotalCrimes
+      
+        }
+      }
+
+Average_crimes_perMonth_1999 = round( Req_TotalCrimes/Req_MonthValue )
+
+##############################################################################
+
+##########################################################################
+
+  for (j in 1:(nrow(Converted_Input_mat_df))) 
+  {
+    Year = (Converted_Input_mat_df[j,3])
+    Month  = (Converted_Input_mat_df[j,4])
+    TotalCrimes = (Converted_Input_mat_df[j,5])
+
+if (Year == 2000)
+        {  
+      Req_MonthValue = ReqMonthValue + Month
+      Req_TotalCrimes = Req_TotalCrimes + TotalCrimes
+      
+        }
+      }
+
+Average_crimes_perMonth_2000 = round( Req_TotalCrimes/Req_MonthValue )
+
+##############################################################################
+
+##########################################################################
+
+  for (j in 1:(nrow(Converted_Input_mat_df))) 
+  {
+    Year = (Converted_Input_mat_df[j,3])
+    Month  = (Converted_Input_mat_df[j,4])
+    TotalCrimes = (Converted_Input_mat_df[j,5])
+
+if (Year == 2001)
+        {  
+      Req_MonthValue = ReqMonthValue + Month
+      Req_TotalCrimes = Req_TotalCrimes + TotalCrimes
+      
+        }
+      }
+
+Average_crimes_perMonth_2001 = round( Req_TotalCrimes/Req_MonthValue )
+
+##############################################################################
+
+##########################################################################
+
+  for (j in 1:(nrow(Converted_Input_mat_df))) 
+  {
+    Year = (Converted_Input_mat_df[j,3])
+    Month  = (Converted_Input_mat_df[j,4])
+    TotalCrimes = (Converted_Input_mat_df[j,5])
+
+if (Year == 2002)
+        {  
+      Req_MonthValue = ReqMonthValue + Month
+      Req_TotalCrimes = Req_TotalCrimes + TotalCrimes
+      
+        }
+      }
+
+Average_crimes_perMonth_2002 = round( Req_TotalCrimes/Req_MonthValue )
+
+##############################################################################
+
+##########################################################################
+
+  for (j in 1:(nrow(Converted_Input_mat_df))) 
+  {
+    Year = (Converted_Input_mat_df[j,3])
+    Month  = (Converted_Input_mat_df[j,4])
+    TotalCrimes = (Converted_Input_mat_df[j,5])
+
+if (Year == 2003)
+        {  
+      Req_MonthValue = ReqMonthValue + Month
+      Req_TotalCrimes = Req_TotalCrimes + TotalCrimes
+      
+        }
+      }
+
+Average_crimes_perMonth_2003 = round( Req_TotalCrimes/Req_MonthValue )
+
+##############################################################################
+
+##########################################################################
+
+
+  for (j in 1:(nrow(Converted_Input_mat_df))) 
+  {
+    Year = (Converted_Input_mat_df[j,3])
+    Month  = (Converted_Input_mat_df[j,4])
+    TotalCrimes = (Converted_Input_mat_df[j,5])
+
+if (Year == 2004)
+        {  
+      Req_MonthValue = ReqMonthValue + Month
+      Req_TotalCrimes = Req_TotalCrimes + TotalCrimes
+      
+        }
+      }
+
+Average_crimes_perMonth_2004 = round( Req_TotalCrimes/Req_MonthValue )
+
+##############################################################################
+
+##########################################################################
+
+  for (j in 1:(nrow(Converted_Input_mat_df))) 
+  {
+    Year = (Converted_Input_mat_df[j,3])
+    Month  = (Converted_Input_mat_df[j,4])
+    TotalCrimes = (Converted_Input_mat_df[j,5])
+
+if (Year == 2005)
+        {  
+      Req_MonthValue = ReqMonthValue + Month
+      Req_TotalCrimes = Req_TotalCrimes + TotalCrimes
+      
+        }
+      }
+
+Average_crimes_perMonth_2005 = round( Req_TotalCrimes/Req_MonthValue )
+
+##############################################################################
+
+##########################################################################
+
+  for (j in 1:(nrow(Converted_Input_mat_df))) 
+  {
+    Year = (Converted_Input_mat_df[j,3])
+    Month  = (Converted_Input_mat_df[j,4])
+    TotalCrimes = (Converted_Input_mat_df[j,5])
+
+if (Year == 2006)
+        {  
+      Req_MonthValue = ReqMonthValue + Month
+      Req_TotalCrimes = Req_TotalCrimes + TotalCrimes
+      
+        }
+      }
+
+Average_crimes_perMonth_2006 = round( Req_TotalCrimes/Req_MonthValue )
+
+##############################################################################
+##########################################################################
+
+  for (j in 1:(nrow(Converted_Input_mat_df))) 
+  {
+    Year = (Converted_Input_mat_df[j,3])
+    Month  = (Converted_Input_mat_df[j,4])
+    TotalCrimes = (Converted_Input_mat_df[j,5])
+
+if (Year == 2007)
+        {  
+      Req_MonthValue = ReqMonthValue + Month
+      Req_TotalCrimes = Req_TotalCrimes + TotalCrimes
+      
+        }
+      }
+
+Average_crimes_perMonth_2007 = round( Req_TotalCrimes/Req_MonthValue )
+
+##############################################################################
+##########################################################################
+
+  for (j in 1:(nrow(Converted_Input_mat_df))) 
+  {
+    Year = (Converted_Input_mat_df[j,3])
+    Month  = (Converted_Input_mat_df[j,4])
+    TotalCrimes = (Converted_Input_mat_df[j,5])
+
+if (Year == 2004)
+        {  
+      Req_MonthValue = ReqMonthValue + Month
+      Req_TotalCrimes = Req_TotalCrimes + TotalCrimes
+      
+        }
+      }
+
+Average_crimes_perMonth_2004 = round( Req_TotalCrimes/Req_MonthValue )
+
+##############################################################################
+##########################################################################
+
+  for (j in 1:(nrow(Converted_Input_mat_df))) 
+  {
+    Year = (Converted_Input_mat_df[j,3])
+    Month  = (Converted_Input_mat_df[j,4])
+    TotalCrimes = (Converted_Input_mat_df[j,5])
+
+if (Year == 2008)
+        {  
+      Req_MonthValue = ReqMonthValue + Month
+      Req_TotalCrimes = Req_TotalCrimes + TotalCrimes
+      
+        }
+      }
+
+Average_crimes_perMonth_2008 = round( Req_TotalCrimes/Req_MonthValue )
+
+##############################################################################
+##########################################################################
+
+  for (j in 1:(nrow(Converted_Input_mat_df))) 
+  {
+    Year = (Converted_Input_mat_df[j,3])
+    Month  = (Converted_Input_mat_df[j,4])
+    TotalCrimes = (Converted_Input_mat_df[j,5])
+
+if (Year == 2009)
+        {  
+      Req_MonthValue = ReqMonthValue + Month
+      Req_TotalCrimes = Req_TotalCrimes + TotalCrimes
+      
+        }
+      }
+
+Average_crimes_perMonth_2009 = round( Req_TotalCrimes/Req_MonthValue )
+
+##############################################################################
+##########################################################################
+
+  for (j in 1:(nrow(Converted_Input_mat_df))) 
+  {
+    Year = (Converted_Input_mat_df[j,3])
+    Month  = (Converted_Input_mat_df[j,4])
+    TotalCrimes = (Converted_Input_mat_df[j,5])
+
+if (Year == 2010)
+        {  
+      Req_MonthValue = ReqMonthValue + Month
+      Req_TotalCrimes = Req_TotalCrimes + TotalCrimes
+      
+        }
+      }
+
+Average_crimes_perMonth_2010 = round( Req_TotalCrimes/Req_MonthValue )
+
+##############################################################################
+##########################################################################
+
+  for (j in 1:(nrow(Converted_Input_mat_df))) 
+  {
+    Year = (Converted_Input_mat_df[j,3])
+    Month  = (Converted_Input_mat_df[j,4])
+    TotalCrimes = (Converted_Input_mat_df[j,5])
+
+if (Year == 2011)
+        {  
+      Req_MonthValue = ReqMonthValue + Month
+      Req_TotalCrimes = Req_TotalCrimes + TotalCrimes
+      
+        }
+      }
+
+Average_crimes_perMonth_2011 = round( Req_TotalCrimes/Req_MonthValue )
+
+##############################################################################
+##########################################################################
+
+  for (j in 1:(nrow(Converted_Input_mat_df))) 
+  {
+    Year = (Converted_Input_mat_df[j,3])
+    Month  = (Converted_Input_mat_df[j,4])
+    TotalCrimes = (Converted_Input_mat_df[j,5])
+
+if (Year == 2012)
+        {  
+      Req_MonthValue = ReqMonthValue + Month
+      Req_TotalCrimes = Req_TotalCrimes + TotalCrimes
+      
+        }
+      }
+
+Average_crimes_perMonth_2012 = round( Req_TotalCrimes/Req_MonthValue )
+
+##############################################################################
+##########################################################################
+
+  for (j in 1:(nrow(Converted_Input_mat_df))) 
+  {
+    Year = (Converted_Input_mat_df[j,3])
+    Month  = (Converted_Input_mat_df[j,4])
+    TotalCrimes = (Converted_Input_mat_df[j,5])
+
+if (Year == 2013)
+        {  
+      Req_MonthValue = ReqMonthValue + Month
+      Req_TotalCrimes = Req_TotalCrimes + TotalCrimes
+      
+        }
+      }
+
+Average_crimes_perMonth_2013 = round( Req_TotalCrimes/Req_MonthValue )
+
+##############################################################################
+##########################################################################
+
+  for (j in 1:(nrow(Converted_Input_mat_df))) 
+  {
+    Year = (Converted_Input_mat_df[j,3])
+    Month  = (Converted_Input_mat_df[j,4])
+    TotalCrimes = (Converted_Input_mat_df[j,5])
+
+if (Year == 2014)
+        {  
+      Req_MonthValue = ReqMonthValue + Month
+      Req_TotalCrimes = Req_TotalCrimes + TotalCrimes
+      
+        }
+      }
+
+Average_crimes_perMonth_2014 = round( Req_TotalCrimes/Req_MonthValue )
+
+##############################################################################
+##########################################################################
+
+  for (j in 1:(nrow(Converted_Input_mat_df))) 
+  {
+    Year = (Converted_Input_mat_df[j,3])
+    Month  = (Converted_Input_mat_df[j,4])
+    TotalCrimes = (Converted_Input_mat_df[j,5])
+
+if (Year == 2015)
+        {  
+      Req_MonthValue = ReqMonthValue + Month
+      Req_TotalCrimes = Req_TotalCrimes + TotalCrimes
+      
+        }
+      }
+
+Average_crimes_perMonth_2015 = round( Req_TotalCrimes/Req_MonthValue )
+
+##############################################################################
+##########################################################################
+
+  for (j in 1:(nrow(Converted_Input_mat_df))) 
+  {
+    Year = (Converted_Input_mat_df[j,3])
+    Month  = (Converted_Input_mat_df[j,4])
+    TotalCrimes = (Converted_Input_mat_df[j,5])
+
+if (Year == 2016)
+        {  
+      Req_MonthValue = ReqMonthValue + Month
+      Req_TotalCrimes = Req_TotalCrimes + TotalCrimes
+      
+        }
+      }
+
+Average_crimes_perMonth_2016 = round( Req_TotalCrimes/Req_MonthValue )
+
+##############################################################################
+##########################################################################
+
+  for (j in 1:(nrow(Converted_Input_mat_df))) 
+  {
+    Year = (Converted_Input_mat_df[j,3])
+    Month  = (Converted_Input_mat_df[j,4])
+    TotalCrimes = (Converted_Input_mat_df[j,5])
+
+if (Year == 2017)
+        {  
+      Req_MonthValue = ReqMonthValue + Month
+      Req_TotalCrimes = Req_TotalCrimes + TotalCrimes
+      
+        }
+      }
+
+Average_crimes_perMonth_2017 = round( Req_TotalCrimes/Req_MonthValue )
+
+##############################################################################
